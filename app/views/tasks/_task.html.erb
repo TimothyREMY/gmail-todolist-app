@@ -1,0 +1,2 @@
+<li><%= task.title %>, to read: <%= task.deadline.strftime('%D')%></li>
+<%= link_to '<i class="fas fa-trash"></i>'.html_safe, task_path(task.id), data: {confirm: "Êtes-vous sûr de vouloir supprimer cette tâche ?"}, method: "delete", remote: true%>
